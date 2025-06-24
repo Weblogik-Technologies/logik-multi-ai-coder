@@ -1,4 +1,4 @@
-<Window x:Class="Logik.MultiAiCoder.VisualStudio.UI.ConfigurationWindow"
+<Window x:Class="Logik.MultiAiCoder.VisualStudio.VSUI.ConfigurationWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Configurations" Height="300" Width="400">

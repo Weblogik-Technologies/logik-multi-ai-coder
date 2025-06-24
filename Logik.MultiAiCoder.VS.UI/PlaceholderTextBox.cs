@@ -16,14 +16,14 @@ namespace Logik.MultiAiCoder.VisualStudio.UI
                 new FrameworkPropertyMetadata(typeof(PlaceholderTextBox)));
         }
 
-        public static readonly DependencyProperty PlaceholderProperty =
+        public static readonly DependencyProperty PlaceholderTextProperty =
             DependencyProperty.Register("PlaceholderText", typeof(string), typeof(PlaceholderTextBox),
                 new PropertyMetadata(string.Empty));
 
-        public string Placeholder
+        public string PlaceholderText
         {
-            get => (string)GetValue(PlaceholderProperty);
-            set => SetValue(PlaceholderProperty, value);
+            get => (string)GetValue(PlaceholderTextProperty);
+            set => SetValue(PlaceholderTextProperty, value);
         }
     }
 }

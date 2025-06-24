@@ -16,7 +16,7 @@
     <RootNamespace>Logik.MultiAiCoder.VisualStudio</RootNamespace>
     <AssemblyName>Logik.MultiAiCoder.VisualStudio</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-	<UseWPF>true</UseWPF>
+    <UseWPF>true</UseWPF>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <UseCodebase>true</UseCodebase>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
@@ -48,14 +48,14 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VisualStudioPackage.cs" />
-    <Compile Include="ToolWindow\LogikMultiAiToolWindow.cs" />
-    <Compile Include="UI\AddPromptWindow.xaml.cs">
+    <Compile Include="VSUI\LogikMultiAiToolWindow.cs" />
+    <Compile Include="VSUI\AddPromptWindow.xaml.cs">
       <DependentUpon>AddPromptWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\ConfigurationWindow.xaml.cs">
+    <Compile Include="VSUI\ConfigurationWindow.xaml.cs">
       <DependentUpon>ConfigurationWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\LogikMultiAiControl.xaml.cs">
+    <Compile Include="VSUI\LogikMultiAiControl.xaml.cs">
       <DependentUpon>LogikMultiAiControl.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -76,15 +76,15 @@
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2094" NoWarn="NU1604" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="UI\AddPromptWindow.xaml">
+    <Page Include="VSUI\AddPromptWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UI\ConfigurationWindow.xaml">
+    <Page Include="VSUI\ConfigurationWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UI\LogikMultiAiControl.xaml">
+    <Page Include="VSUI\LogikMultiAiControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

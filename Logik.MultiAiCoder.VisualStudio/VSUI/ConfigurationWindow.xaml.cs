@@ -4,7 +4,7 @@ using System.Linq;
 using System.Windows;
 using Logik.MultiAiCoder.Engine;
 
-namespace Logik.MultiAiCoder.VisualStudio.UI
+namespace Logik.MultiAiCoder.VisualStudio.VSUI
 {
     public partial class ConfigurationWindow : Window
     {

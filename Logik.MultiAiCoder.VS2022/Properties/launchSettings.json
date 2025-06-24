@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "VSIX Debug": {
-      "commandName": "Project",
-      "commandLineArgs": "/RootSuffix Exp",
-      "workingDirectory": "$(ProjectDir)"
-    }
-  }
-}
