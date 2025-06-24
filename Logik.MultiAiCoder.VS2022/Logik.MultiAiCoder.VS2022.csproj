@@ -1,12 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFramework>net48</TargetFramework>
-		<OutputType>Library</OutputType>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
-		<RootNamespace>Logik.MultiAiCoder.VS2022</RootNamespace>
-		<UseWPF>true</UseWPF>
-	</PropertyGroup>
+        <PropertyGroup>
+                <TargetFramework>net48</TargetFramework>
+                <OutputType>Library</OutputType>
+                <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+                <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
+                <RootNamespace>Logik.MultiAiCoder.VS2022</RootNamespace>
+                <UseWPF>true</UseWPF>
+        </PropertyGroup>
+
+        <PropertyGroup>
+                <StartAction>Program</StartAction>
+                <StartProgram>C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe</StartProgram>
+                <StartArguments>/rootsuffix Exp</StartArguments>
+        </PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" />
