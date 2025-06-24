@@ -9,4 +9,7 @@ Logik Multi AI Coder est un ensemble d'extensions pour Visual Studio 2022 et VS 
 ## Español
 Logik Multi AI Coder es un conjunto de extensiones para Visual Studio 2022 y VS Code que permite enviar el mismo prompt a varias plataformas de IA (OpenAI, Claude, Gemini, Azure OpenAI) y mostrar los resultados en paralelo. Se admiten varios modelos por proveedor y se almacenan localmente. Una ventana de configuración permite ordenar los prompts y valida la clave API. Cuatro configuraciones por defecto (una por proveedor) se crean al iniciar. Cada proveedor recibe el contexto de los archivos para mejorar las respuestas.
 
+Use `Logik.MultiAiCoder.sln` to open the Visual Studio 2022 extension and shared
+engine in one solution. For the VS Code extension, open the `logik-multi-ai-coder.code-workspace`
+file with VS Code.
 See each project directory for build instructions.
