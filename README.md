@@ -12,4 +12,17 @@ Logik Multi AI Coder es un conjunto de extensiones para Visual Studio 2022 y VS 
 Use `Logik.MultiAiCoder.sln` to open the Visual Studio 2022 extension and shared
 engine in one solution. For the VS Code extension, open the `logik-multi-ai-coder.code-workspace`
 file with VS Code.
-See each project directory for build instructions.
+
+### Building
+1. **Visual Studio**
+   - Open `Logik.MultiAiCoder.sln` with Visual Studio 2022.
+   - Build the solution. The VSIX project will output a `.vsix` file that can be
+     installed or published to the Marketplace.
+
+2. **VS Code**
+   - Install Node.js 18+ and run `npm install` inside `Logik.MultiAiCoder.VSCode`.
+   - Run `npm run compile` to produce the extension in the `dist` folder.
+   - Package with `vsce package` for publishing.
+
+Both extensions rely on the Engine library which contains the provider logic and
+prompt dispatcher.

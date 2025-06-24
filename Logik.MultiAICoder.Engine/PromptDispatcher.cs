@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 namespace Logik.MultiAiCoder.Engine
 {
-    public class PromptDispatcher
+    public class PromptDispatcher : IPromptDispatcher
     {
-        private readonly Dictionary<string, IApiClient> _clients = new();
+        private readonly Dictionary<string, IAIProvider> _clients = new();
 
         public PromptDispatcher()
         {
@@ -17,7 +17,7 @@ namespace Logik.MultiAiCoder.Engine
             }
         }
 
-        private static IApiClient CreateClient(PromptConfiguration cfg)
+        private static IAIProvider CreateClient(PromptConfiguration cfg)
         {
             return cfg.Provider.ToLower() switch
             {
@@ -29,19 +29,24 @@ namespace Logik.MultiAiCoder.Engine
             };
         }
 
-        public void RegisterClient(string name, IApiClient client)
+        public void RegisterClient(string name, IAIProvider client)
         {
             _clients[name] = client;
         }
 
-        public async Task<Dictionary<string, string>> DispatchAsync(string prompt)
+        public async Task<IList<ResultModel>> DispatchAsync(string prompt, IEnumerable<string>? providers = null)
         {
-            var results = new Dictionary<string, string>();
-            foreach (var kv in _clients)
+            var active = providers == null
+                ? _clients
+                : _clients.Where(kv => providers.Contains(kv.Key));
+
+            var tasks = active.Select(async kv => new ResultModel
             {
-                results[kv.Key] = await kv.Value.ExecuteAsync(prompt);
-            }
-            return results;
+                Provider = kv.Value.Provider,
+                Model = kv.Value.ModelVersion,
+                Content = await kv.Value.ExecuteAsync(prompt)
+            });
+            return (await Task.WhenAll(tasks)).ToList();
         }
 
         public Task UpdateContextAsync(string filePath, string content)

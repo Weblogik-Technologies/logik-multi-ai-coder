@@ -1,14 +1,10 @@
-using System.Threading.Tasks;
-
 namespace Logik.MultiAiCoder.Engine
 {
-    public interface IApiClient
+    /// <summary>
+    /// Legacy name kept for backwards compatibility. It simply aliases
+    /// <see cref="IAIProvider"/> which describes the same contract.
+    /// </summary>
+    public interface IApiClient : IAIProvider
     {
-        string Provider { get; }
-        string ModelVersion { get; }
-        string ApiKey { get; set; }
-        Task<bool> ValidateApiKeyAsync(string key);
-        Task UpdateContextAsync(string filePath, string content);
-        Task<string> ExecuteAsync(string prompt);
     }
 }
