@@ -1,0 +1,10 @@
+<UserControl x:Class="Logik.MultiAiCoder.VS2022.UI.MultiAiControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Multi AI Coder" Margin="0,0,10,0" VerticalAlignment="Center" />
+            <Button Content="⚙" Width="24" Height="24" Click="Config_Click" />
+        </StackPanel>
+    </Grid>
+</UserControl>

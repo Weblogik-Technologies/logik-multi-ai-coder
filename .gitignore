@@ -404,3 +404,14 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+# Node development
+node_modules/
+dist/
+*.tgz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.vscode-test/
+coverage/
