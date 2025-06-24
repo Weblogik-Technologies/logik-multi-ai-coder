@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Logik.MultiAICoder.Engine
+namespace Logik.MultiAiCoder.Engine
 {
     public static class ResultComparer
     {

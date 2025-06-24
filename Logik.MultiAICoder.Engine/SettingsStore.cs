@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Logik.MultiAICoder.Engine
+namespace Logik.MultiAiCoder.Engine
 {
     public static class SettingsStore
     {

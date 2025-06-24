@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Logik.MultiAICoder.Engine
+namespace Logik.MultiAiCoder.Engine
 {
     public interface IApiClient
     {

@@ -1,10 +1,11 @@
 using System.Windows;
+using Logik.MultiAiCoder.Engine;
 
 namespace Logik.MultiAiCoder.VS2022.UI
 {
     public partial class AddPromptWindow : Window
     {
-        public Engine.PromptConfiguration Configuration { get; private set; } = new Engine.PromptConfiguration();
+        public PromptConfiguration Configuration { get; private set; } = new PromptConfiguration();
 
         public AddPromptWindow()
         {

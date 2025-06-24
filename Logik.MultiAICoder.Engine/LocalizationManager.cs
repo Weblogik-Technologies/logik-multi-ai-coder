@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Resources;
 
-namespace Logik.MultiAICoder.Engine
+namespace Logik.MultiAiCoder.Engine
 {
     public class LocalizationManager
     {

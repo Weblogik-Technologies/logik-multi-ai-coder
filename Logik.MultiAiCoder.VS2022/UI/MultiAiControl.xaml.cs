@@ -1,5 +1,6 @@
 using System.Windows.Controls;
 using System.Windows;
+using Logik.MultiAiCoder.Engine;
 
 namespace Logik.MultiAiCoder.VS2022.UI
 {
@@ -12,7 +13,7 @@ namespace Logik.MultiAiCoder.VS2022.UI
 
         public async void UpdateContext(string filePath, string content)
         {
-            var dispatcher = new Engine.PromptDispatcher();
+            var dispatcher = new PromptDispatcher();
             await dispatcher.UpdateContextAsync(filePath, content);
         }
 

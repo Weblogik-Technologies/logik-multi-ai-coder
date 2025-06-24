@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace Logik.MultiAICoder.Engine
+namespace Logik.MultiAiCoder.Engine
 {
     public static class PromptConfigurationStore
     {

@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Logik.MultiAICoder.Engine.ApiClients
+namespace Logik.MultiAiCoder.Engine.ApiClients
 {
     public class ApiClient_OpenAI : IApiClient
     {

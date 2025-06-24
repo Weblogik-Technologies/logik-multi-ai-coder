@@ -2,17 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
+using Logik.MultiAiCoder.Engine;
 
 namespace Logik.MultiAiCoder.VS2022.UI
 {
     public partial class ConfigurationWindow : Window
     {
-        private readonly List<Engine.PromptConfiguration> _configs;
+        private readonly List<PromptConfiguration> _configs;
 
         public ConfigurationWindow()
         {
             InitializeComponent();
-            _configs = Engine.PromptConfigurationStore.Load();
+            _configs = PromptConfigurationStore.Load();
             ConfigGrid.ItemsSource = _configs;
         }
 
@@ -65,7 +66,7 @@ namespace Logik.MultiAiCoder.VS2022.UI
             {
                 _configs[i].Order = i;
             }
-            Engine.PromptConfigurationStore.Save(_configs);
+            PromptConfigurationStore.Save(_configs);
         }
     }
 }

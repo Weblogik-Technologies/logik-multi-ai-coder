@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <!-- Target .NET Standard 2.0 for compatibility with .NET Framework 4.8 -->
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Logik.MultiAICoder.Engine</RootNamespace>
+    <RootNamespace>Logik.MultiAiCoder.Engine</RootNamespace>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>

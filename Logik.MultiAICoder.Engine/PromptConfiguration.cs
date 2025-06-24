@@ -1,6 +1,6 @@
 using System;
 
-namespace Logik.MultiAICoder.Engine
+namespace Logik.MultiAiCoder.Engine
 {
     public class PromptConfiguration
     {
