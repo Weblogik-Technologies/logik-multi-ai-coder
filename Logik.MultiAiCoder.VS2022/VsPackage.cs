@@ -1,17 +1,22 @@
+using Logik.MultiAiCoder.VS2022.ToolWindow;
+using Logik.MultiAiCoder.VS2022.UI;
+using Microsoft.VisualStudio.Shell;
 using System;
 using System.Runtime.InteropServices;
-using Microsoft.VisualStudio.Shell;
 
 namespace Logik.MultiAiCoder.VS2022
 {
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [InstalledProductRegistration("Multi AI Coder", "", "0.1")]
+    [InstalledProductRegistration("Logik Multi AI Coder", "", "0.1")]
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid("1D450CDF-90D7-4B36-9A29-78630D5DD9E2")]
+    [ProvideToolWindow(typeof(LogikMultiAiToolWindow))]
     public sealed class VsPackage : AsyncPackage
     {
-        protected override System.Threading.Tasks.Task InitializeAsync(System.Threading.CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
+        protected override async System.Threading.Tasks.Task InitializeAsync(System.Threading.CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
+            await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+
             var configs = Engine.PromptConfigurationStore.Load();
             if (configs.Count == 0)
             {
@@ -24,7 +29,14 @@ namespace Logik.MultiAiCoder.VS2022
                 });
                 Engine.PromptConfigurationStore.Save(configs);
             }
-            return base.InitializeAsync(cancellationToken, progress);
+
+            var window = await this.ShowToolWindowAsync(typeof(LogikMultiAiToolWindow), 0, true, cancellationToken);
+
+            if ((null == window) || (null == window.Frame))
+            {
+                throw new NotSupportedException("Cannot create Logik Multi AI Coder tool window.");
+            }
+
         }
     }
 }

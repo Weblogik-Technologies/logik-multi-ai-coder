@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0"
-                 xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"
-                 xmlns:d="http://schemas.microsoft.com/developer/vsx-schema/2011">
+                 xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
 
 	<Metadata>
 		<Identity Id="Logik.MultiAiCoder.VS2022" Version="0.1" Language="en-US" />
@@ -12,6 +11,7 @@
 
 	<Installation>
 		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)" />
+		<InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[17.0,18.0)" />
 	</Installation>
 
 	<Dependencies>
@@ -19,9 +19,9 @@
 
 	<Assets>
 		<Asset Type="Microsoft.VisualStudio.VsPackage"
-			   d:Source="Project"
-			   d:ProjectName="Logik.MultiAiCoder.VS2022"
-			   d:Target="Package" />
+			   Source="Project"
+			   ProjectName="Logik.MultiAiCoder.VS2022"
+			   Target="Package" />
 	</Assets>
 
 </PackageManifest>

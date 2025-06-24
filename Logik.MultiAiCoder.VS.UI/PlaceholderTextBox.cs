@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Logik.MultiAiCoder.VS.UI
+namespace Logik.MultiAiCoder.VisualStudio.UI
 {
     public class PlaceholderTextBox : TextBox
     {
@@ -17,7 +17,7 @@ namespace Logik.MultiAiCoder.VS.UI
         }
 
         public static readonly DependencyProperty PlaceholderProperty =
-            DependencyProperty.Register("Placeholder", typeof(string), typeof(PlaceholderTextBox),
+            DependencyProperty.Register("PlaceholderText", typeof(string), typeof(PlaceholderTextBox),
                 new PropertyMetadata(string.Empty));
 
         public string Placeholder
