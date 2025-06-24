@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Logik.MultiAiCoder.VS2022": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\devenv.exe /rootsuffix Exp"
+    }
+  }
+}

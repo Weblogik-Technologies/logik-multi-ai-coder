@@ -6,7 +6,7 @@ namespace Logik.MultiAiCoder.VS2022.UI
 {
     public partial class MultiAiControl : UserControl
     {
-        private readonly PromptDispatcher _dispatcher = new();
+        private readonly PromptDispatcher _dispatcher = new PromptDispatcher();
 
         public MultiAiControl()
         {
