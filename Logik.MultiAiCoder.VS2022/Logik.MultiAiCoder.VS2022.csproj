@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <RootNamespace>Logik.MultiAiCoder.VS2022</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.7.34591" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.15.0" Version="17.0.32502.4" />
+    <ProjectReference Include="..\Logik.MultiAICoder.Engine\Logik.MultiAICoder.Engine.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Logik.MultiAiCoder.VS2022" Version="0.1" Language="en-US" />
+    <DisplayName>Logik Multi AI Coder</DisplayName>
+    <Description xml:space="preserve">Compare multiple AI platforms side-by-side.</Description>
+    <Tags>AI;prompt</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)" />
+  </Installation>
+  <Dependencies>
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="Logik.MultiAiCoder.VS2022" d:Target="Package" />
+  </Assets>
+</PackageManifest>
