@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Logik.MultiAiCoder.VisualStudio.UI.Properties {
+namespace Logik.MultiAiCoder.VisualStudio.UIControls.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using Logik.MultiAiCoder.Engine;
+using Logik.MultiAiCoder.VisualStudio.UIControls;
 
 namespace Logik.MultiAiCoder.VisualStudio.VSUI
 {

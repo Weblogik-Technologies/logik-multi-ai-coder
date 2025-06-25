@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Logik.MultiAiCoder.VisualStudio.UI
+namespace Logik.MultiAiCoder.VisualStudio.UIControls
 {
     public class PlaceholderTextBox : TextBox
     {

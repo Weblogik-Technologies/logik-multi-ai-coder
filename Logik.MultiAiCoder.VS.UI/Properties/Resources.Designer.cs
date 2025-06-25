@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Logik.MultiAiCoder.VisualStudio.UI.Properties {
+namespace Logik.MultiAiCoder.VisualStudio.UIControls.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Logik.MultiAiCoder.VisualStudio.UI.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Logik.MultiAiCoder.VisualStudio.UI.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Logik.MultiAiCoder.VisualStudio.UIControls.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

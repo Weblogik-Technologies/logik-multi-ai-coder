@@ -1,14 +1,15 @@
 using System.Windows.Controls;
 using System.Windows;
 using Logik.MultiAiCoder.Engine;
+using Logik.MultiAiCoder.VisualStudio.UIControls;
 
 namespace Logik.MultiAiCoder.VisualStudio.VSUI
 {
-    public partial class MultiAiControl : UserControl
+    public partial class LogikMultiAiControl : UserControl
     {
         private readonly PromptDispatcher _dispatcher = new PromptDispatcher();
 
-        public MultiAiControl()
+        public LogikMultiAiControl()
         {
             InitializeComponent();
         }
