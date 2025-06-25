@@ -2,11 +2,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logik.MultiAiCoder.Engine", "Logik.MultiAICoder.Engine\Logik.MultiAiCoder.Engine.csproj", "{AD98984B-39C1-44BA-B3EB-23621B19C3DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logik.MultiAiCoder.VisualStudio.UIControls", "Logik.MultiAiCoder.VS.UI\Logik.MultiAiCoder.VisualStudio.UIControls.csproj", "{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logik.MultiAiCoder.VisualStudio", "Logik.MultiAiCoder.VisualStudio\Logik.MultiAiCoder.VisualStudio.csproj", "{EFC2DE68-563D-4126-8B4D-1479CD965DC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logik.MultiAiCoder.VisualStudio.UIControls", "Logik.MultiAiCoder.VisualStudio.UIControls\Logik.MultiAiCoder.VisualStudio.UIControls.csproj", "{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logik.MultiAiCoder.Engine", "Logik.MultiAiCoder.Engine\Logik.MultiAiCoder.Engine.csproj", "{64006612-AB4F-1166-51EB-67958E397377}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,18 +14,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AD98984B-39C1-44BA-B3EB-23621B19C3DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD98984B-39C1-44BA-B3EB-23621B19C3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD98984B-39C1-44BA-B3EB-23621B19C3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD98984B-39C1-44BA-B3EB-23621B19C3DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EFC2DE68-563D-4126-8B4D-1479CD965DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EFC2DE68-563D-4126-8B4D-1479CD965DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFC2DE68-563D-4126-8B4D-1479CD965DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFC2DE68-563D-4126-8B4D-1479CD965DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFCF238-BA5E-4662-8AC3-FB2D9355CDF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64006612-AB4F-1166-51EB-67958E397377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64006612-AB4F-1166-51EB-67958E397377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64006612-AB4F-1166-51EB-67958E397377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64006612-AB4F-1166-51EB-67958E397377}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
