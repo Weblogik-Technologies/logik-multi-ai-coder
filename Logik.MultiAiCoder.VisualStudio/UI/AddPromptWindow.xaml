@@ -1,4 +1,4 @@
-<Window x:Class="Logik.MultiAiCoder.VisualStudio.VSUI.AddPromptWindow"
+<Window x:Class="Logik.MultiAiCoder.VisualStudio.UI.AddPromptWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:ui="clr-namespace:Logik.MultiAiCoder.VisualStudio.UIControls;assembly=Logik.MultiAiCoder.VisualStudio.UIControls"

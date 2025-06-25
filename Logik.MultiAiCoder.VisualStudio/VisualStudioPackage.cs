@@ -1,4 +1,4 @@
-﻿using Logik.MultiAiCoder.VisualStudio.VSUI;
+﻿using Logik.MultiAiCoder.VisualStudio.UI;
 using Logik.MultiAiCoder.Engine;
 using Microsoft.VisualStudio.Shell;
 using System;

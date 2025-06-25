@@ -49,14 +49,14 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VisualStudioPackage.cs" />
-    <Compile Include="VSUI\LogikMultiAiToolWindow.cs" />
-    <Compile Include="VSUI\AddPromptWindow.xaml.cs">
+    <Compile Include="UI\LogikMultiAiToolWindow.cs" />
+    <Compile Include="UI\AddPromptWindow.xaml.cs">
       <DependentUpon>AddPromptWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="VSUI\ConfigurationWindow.xaml.cs">
+    <Compile Include="UI\ConfigurationWindow.xaml.cs">
       <DependentUpon>ConfigurationWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="VSUI\LogikMultiAiControl.xaml.cs">
+    <Compile Include="UI\LogikMultiAiControl.xaml.cs">
       <DependentUpon>LogikMultiAiControl.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -84,15 +84,15 @@
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2094" NoWarn="NU1604" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="VSUI\AddPromptWindow.xaml">
+    <Page Include="UI\AddPromptWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="VSUI\ConfigurationWindow.xaml">
+    <Page Include="UI\ConfigurationWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="VSUI\LogikMultiAiControl.xaml">
+    <Page Include="UI\LogikMultiAiControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

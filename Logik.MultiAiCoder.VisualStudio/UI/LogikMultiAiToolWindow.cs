@@ -2,7 +2,7 @@ using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 
-namespace Logik.MultiAiCoder.VisualStudio.VSUI
+namespace Logik.MultiAiCoder.VisualStudio.UI
 {
     [Guid("3441D20C-98FB-4E54-AD7C-12C9F586D9CE")]
     public class LogikMultiAiToolWindow : ToolWindowPane
