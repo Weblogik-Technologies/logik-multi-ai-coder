@@ -8,6 +8,22 @@ namespace Logik.MultiAiCoder.Engine
     {
         private const string Key = "prompt_configurations";
 
+        public static void SetDefaultAiProviders()
+        {
+            var configs = Load();
+            if (configs.Count == 0)
+            {
+                configs.AddRange(new[]
+                {
+                    new Engine.PromptConfiguration { Provider = "OpenAI", Model = "gpt-4o", Order = 0 },
+                    new Engine.PromptConfiguration { Provider = "Claude", Model = "3-opus", Order = 1 },
+                    new Engine.PromptConfiguration { Provider = "Gemini", Model = "1.5-pro", Order = 2 },
+                    new Engine.PromptConfiguration { Provider = "AzureOpenAI", Model = "gpt-4o", Order = 3 }
+                });
+                Save(configs);
+            }
+        }
+
         public static List<PromptConfiguration> Load()
         {
             var json = SettingsStore.Get(Key);

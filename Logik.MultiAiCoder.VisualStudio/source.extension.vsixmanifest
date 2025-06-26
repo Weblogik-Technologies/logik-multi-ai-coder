@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Logik.MultiAiCoder.VisualStudio.8b520e72-8978-46ef-8d98-9cc9028442a8" Version="1.0" Language="en-US" Publisher="Weblogik Technologies Inc" />
-        <DisplayName>Logik.MultiAiCoder.VisualStudio</DisplayName>
+        <Identity Id="Logik.MultiAiCoder.VisualStudio.8b520e72-8978-46ef-8d98-9cc9028442a8" Version="0.0.1" Language="en-US" Publisher="Weblogik Technologies" />
+        <DisplayName>Logik Multi AI Coder</DisplayName>
         <Description xml:space="preserve">Logik Multi AI Coder ;-)
 
 Analyse your code and use GitHub Copilot like solution to compare multiple AI platforms side-by-side : ChatGPT, Claude, Gemini, Azure OpenAI.</Description>
+        <Icon>Resources\LOGIK_32x32.bmp</Icon>
         <Tags>AI,Prompts,ChatGPT,Claude,Gemini,Azure OpenAI</Tags>
     </Metadata>
     <Installation>
@@ -26,6 +27,6 @@ Analyse your code and use GitHub Copilot like solution to compare multiple AI pl
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
     <Assets>
-        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="Logik.MultiAiCoder.VisualStudio" Path="|Logik.MultiAiCoder.VisualStudio;PkgdefProjectOutputGroup|" />
     </Assets>
 </PackageManifest>

@@ -2,6 +2,7 @@ using System.Windows.Controls;
 using System.Windows;
 using Logik.MultiAiCoder.Engine;
 using Logik.MultiAiCoder.VisualStudio.UIControls;
+using System.Diagnostics;
 
 namespace Logik.MultiAiCoder.VisualStudio.UI
 {
@@ -12,6 +13,7 @@ namespace Logik.MultiAiCoder.VisualStudio.UI
         public LogikMultiAiControl()
         {
             InitializeComponent();
+            Debug.WriteLine("[Logik Multi AI Coder] Control initialized");
         }
 
         public async void UpdateContext(string filePath, string content)

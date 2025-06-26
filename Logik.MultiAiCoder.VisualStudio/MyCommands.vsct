@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
+	<Extern href="vsshlids.h" />
+
+	<Commands package="guidLogikPackage">
+		<Groups>
+			 <!-- This group will appear in the View menu -->
+			<Group guid="guidMyCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_VIEW" />
+			</Group>
+		</Groups>
+
+		<Buttons>
+			<Button guid="guidMyCommandPackageCmdSet" id="MyCommandId" priority="0x0100" type="Button">
+				<Parent guid="guidMyCommandPackageCmdSet" id="MyMenuGroup" />
+				<Icon guid="guidImages" id="bmpPic1" />
+				<Strings>
+					<ButtonText>Logik Multi AI Coder</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+
+		<Bitmaps>
+			<Bitmap guid="guidImages" href="Resources\LOGIK_32x32.bmp" usedList="bmpPic1" />
+		</Bitmaps>
+	</Commands>
+
+	<Symbols>
+		<GuidSymbol name="guidLogikPackage" value="{48d80075-29a9-44c8-befe-fe6a28559979}" />
+		<GuidSymbol name="guidMyCommandPackageCmdSet" value="{1D7B1437-2B97-43D1-BAA4-5D1E01CF6310}">
+			<IDSymbol name="MyCommandId" value="0x0100" />
+			<IDSymbol name="MyMenuGroup" value="0x1020" />
+		</GuidSymbol>
+		<GuidSymbol name="guidImages" value="{D59F0F9B-9542-45B7-A557-F7D7ED985A13}">
+			<IDSymbol name="bmpPic1" value="1" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
